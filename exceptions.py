@@ -2,12 +2,12 @@
 
 class InvalidSizeBoardError(Exception):
     def __init__(self):
-        self.message = "The provided board has an invalid size. It must be a 9x9 matrix."
+        self.message = "Cannot create a board of this size. Size must be either 4, 9, or 16."
 
 
 class InvalidCharactersError(Exception):
     def __init__(self):
-        self.message = "The board contains invalid characters. They must be 1-9 or 0 to represent empty space."
+        self.message = "The board contains invalid characters. They must be a valid number or 0 to represent empty space."
 
 
 class InvalidCombinationError(Exception):
